@@ -1,0 +1,29 @@
+<body>
+
+    <button type="button" onclick="confirm('삭제할래?')">버~튼</button>
+    <button type="button" class="action">버튼2</button>
+    <script>
+        document.querySelector('.action').addEventListener("click",() => {
+           window.open(
+            'http://www.naver.com', '' , 'width=300 height=200');
+        });
+    </script>
+
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+
+
+    <form action="">
+        <input type="text" name="country_code" pattern="[ㄱ-힣0-9]{4}" title="Three letter country code" required>
+        <input type="text" name="phone_number" pattern="[010-[0-9]{3,4}-[0-9]{4}]" placeholder="ex)010-1234-5678" title="Three letter country code">
+
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select><br>
+            
+
+        <button type="submit">제출</button>
+    </form>
+</body>
